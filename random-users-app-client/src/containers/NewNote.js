@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
-import config from "../config";
 import "./NewNote.css";
 import { API } from "aws-amplify";
 import uuid from "uuid";
-import { s3Upload } from "../libs/awsLib";
 
 
 export default class NewNote extends Component {
