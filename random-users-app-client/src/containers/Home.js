@@ -74,10 +74,12 @@ export default class Home extends Component {
         }          
     }
     findLocationNorthMost = event => {
-        alert("in progess");  
+        const resultBox = document.querySelector("#resultBox");
+        resultBox.innerHTML = '<b>Location of the northern most person, and the name of that person:  </b> Not done';
     }
     findLocationEastMost = event => {
-          alert("in progress");
+        const resultBox = document.querySelector("#resultBox");
+        resultBox.innerHTML = '<b>Location of the southern most person, and the name of that person:  </b> Not done';
     }
     async getUsersList() {
         return API.get("notes", "/notes");
@@ -87,7 +89,6 @@ export default class Home extends Component {
       <div className="Home">
         <div className="lander">
           <h1>Random Users App</h1>
-          <p>A simple random users taking app</p>  
         </div><br></br>
         <div id="resultBox"></div>
         <div className="row">
